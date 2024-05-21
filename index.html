@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>ProductFit</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+</head>
+<body class="bg-white">
+  <header class="pt-[32px] pb-[57px] bg-white" >
+    <div class="containers mx-auto px-4">
+      <div class="flex justify-center items-center sm:justify-between">
+        <a class="inline-block" href="/">
+          <img src="./images/Logo.svg" alt="logo" width="239" height="58">
+        </a>
+        <div class="flex items-center space-x-[57px]">
+          <a class="hidden lg:block" href="https://web.telegram.org/">
+            <img src="./images/telegram.svg" alt="message" width="46" height="35">
+          </a>  
+          <a class="hidden lg:block" href="mailto:">
+            <img src="./images/sms.svg" alt="message" width="46" height="35">
+          </a>
+          <a class="hidden md:flex items-center space-x-4 text-[#1E959B] font-semibold" href="tel:+78003017927">
+            <img src="./images/phone.svg" alt="phone" width="17" height="31">
+            <span>+7 800 301-79-27</span>
+          </a>
+          <button class="hidden sm:block w-[186px] py-[23px] bg-[#F05670] rounded-[15px] text-[white] font-semibold">НАЧАТЬ ПРОЕКТ</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="bg-white">
+      <div class=" w-[780px] h-[487px] mx-auto">
+        <swiper-container class="mySwiper" pagination="true" pagination-dynamic-bullets="true">
+          <swiper-slide><img src="./images/hero.png" alt="information" width="780" height="487"></swiper-slide>
+          <swiper-slide><img src="./images/hero_2.svg" alt="information"></swiper-slide>
+          <swiper-slide><img src="./images/hero_3.svg" alt="information"></swiper-slide>
+        </swiper-container>
+      </div>
+    </section>
+    <section class="bg-white pt-[70px]">
+      <div class="containers">
+        <div class="flex gap-[110px]">
+          <div class="md:mx-auto w-[478px] mt-[70px] flex flex-col px-[59px] mb-[70px] rounded-[30px] shadow-lg shadow-indigo-500/400" >
+            <img class="relative bottom-[70px] mx-auto" src="./images/open-gift.png" alt="oprn-gift" width="334" height="264">
+            <div class="flex gap-[55px]">
+              <div>
+                <p class="mb-[11px] text-sm text-[#3C3C3C]">Длительность</p>
+                <h3 class="text-lg text-[#1E959B] font-bold">10 Недель</h3>
+              </div>
+              <div class="h-[78px] w-[1px] bg-[#1E959B] relative bottom-[10px]">
+              </div>
+              <div>
+                <p class="mb-[11px] text-sm text-[#3C3C3C]">Колличество спринтов</p>
+                <h3 class="text-lg text-[#1E959B] font-bold">20 Спринтов</h3>
+              </div>
+            </div>
+            <div class="w-[203px] flex gap-[19px] pt-[20px] " >
+              <img src="./images/blok.svg" alt="blok" width="55" height="55">
+              <img src="./images/phyton.svg" alt="blok" width="55" height="55">
+              <img src="./images/react.svg" alt="blok" width="55" height="55">
+            </div>
+            <div class="flex mx-auto pt-[20px] gap-[15px]">
+              <img src="./images/link.svg" alt="link" width="20" height="20">
+              <h3 class="text-[#1E959B] font-bold text-[24px]">Opengift.Io</h3>
+            </div>
+            <button class="w-[377.03px] bg-[#F05670] py-[29px] rounded-[15px] text-white mt-[48px] mb-[21px]">УЗНАТЬ СТОИМОСТЬ ПРОЕКТА</button>
+          </div>
+          <div class="w-[608px] pt-[72px] lg:mx-auto pb-[50px]">
+            <h2 class="text-[#1E959B] font-bold text-[32px] leading-[40px]">OPENGIFT – ЭТО СИСТЕМА МОНЕТИЗАЦИИ</h2>
+            <h2 class="text-[#1E959B] font-bold text-[30px] leading-[40px] font-sans">OPENSOURCE-ПРОЕКТОВ НА ОСНОВЕ БЛОКЧЕЙНА HYPERLEDGER FABRIC.</h2>
+            <p class="pt-[27px] text-[#3C3C3C]">К разработке платформы было привлечено более 5000 разработчиков. Ее интегрировали с сетью блокчейнов. Альфа-версия была запущена в январе 2018 года. OpenGIft был создан для решения проблем, унаследованных от разработки программного обеспечения. Платформа позволяет компаниям разделять расходы на программное обеспечение, а управление проектами является основной функцией, помогающей в сотрудничестве.</p>
+            <p class="pt-[15px] text-[#3C3C3C]">Для монетизации используются смарт-контракты, чтобы создать пассивный, периодический потенциал дохода. Уникальность проекта в видении на разработку с открытым исходным кодом.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</body>
+</html>
